@@ -22,9 +22,9 @@ case class Q2_ShowLeagueStatsTask(bucket: String) extends Runnable {
       "par championnat")
     standings.createTempView("standings")
     session.sql("SELECT league, season, ROUND(AVG(goalsFor), 0) AS avg_goalsFor " +
-                        "FROM standings " +
-                        "GROUP BY league, season " +
-                        "ORDER BY league, season").show()
+                "FROM standings " +
+                "GROUP BY league, season " +
+                "ORDER BY league, season").show()
 
     // TODO Q2
     println("En Dataset, quelle est l'équipe la plus titrée de France ?")
