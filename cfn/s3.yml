@@ -1,3 +1,10 @@
 ---
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
+  A:
+    Type: AWS::S3::Bucket
+    Properties:
+      DestinationBucketName: B
+  B:
+    Type: AWS::S3::Bucket
+
