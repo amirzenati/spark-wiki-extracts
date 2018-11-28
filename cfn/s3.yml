@@ -4,9 +4,9 @@ Resources:
   A:
     Type: AWS::S3::Bucket
     Properties:
-      DestinationBucketName: B
-      BucketName: A
+      DestinationBucketName: "B"
+      BucketName: "A"
   B:
     Type: AWS::S3::Bucket
     Properties:
-      BucketName: B
+      BucketName: "B"
