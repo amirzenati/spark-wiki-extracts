@@ -33,7 +33,7 @@ case class Q2_ShowLeagueStatsTask(bucket: String) extends Runnable {
       .groupBy($"team")
       .count()
       .orderBy(desc("count"))
-      .show()
+      .show(1)
 
     // TODO Q3
     println("En Dataset, quelle est la moyenne de points des vainqueurs sur les 5 différents championnats ?")
